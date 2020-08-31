@@ -17,7 +17,7 @@ public class ExA3 {
        Address a = new Address("Diestsevest","32 bus 4B","3000","Leuven","België","BE");
        Company c = new Company("ABIS",a);
        
-       Person p1 = new Person(1,"Ann","Smits",LocalDate.of(1985, 6, 28),c);
+       Person p1 = new Person(1,"Sandy","Schillebeeckx",LocalDate.of(1978, 4, 10),c);
        Person p2 = new Person(2,"John","Doe",LocalDate.of(1967, 8, 10));
        
        try ( BufferedWriter bw = Files.newBufferedWriter(Paths.get("personinfo.txt"));){
