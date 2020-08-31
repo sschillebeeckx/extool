@@ -14,12 +14,12 @@ public class ExA3 {
 
 	public static void main(String[] args) {
 
-       Address a = new Address("Diestsevest","32 bus 4B","3000","Leuven","België","BE");
+       Address a = new Address("Diestsevest","32 bus 4B","3000","Leuven","BelgiÃ«","BE");
        Company c = new Company("ABIS",a);
        
        Person p1 = new Person(1,"Sandy","Van Buggenhout",LocalDate.of(1978, 4, 10),c);
        Person p2 = new Person(2,"John","Doe",LocalDate.of(1967, 8, 10));
-       Person p3 = new Person(3,"Some","Dude",LocalDate.of(1997, 5, 4));
+       Person p3 = new Person(3,"Some","Dude",LocalDate.of(1987, 5, 4));
        
        try ( BufferedWriter bw = Files.newBufferedWriter(Paths.get("personinfo.txt"));){
     	   bw.write(p1.toString() + "\n");
